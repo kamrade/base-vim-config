@@ -78,6 +78,9 @@ endif
 
 filetype off
 
+call pathogen#helptags()
+execute pathogen#infect()
+
 filetype plugin indent on
 set laststatus=2
 
@@ -85,7 +88,5 @@ set noshowmode
 
 syntax on
 set background=dark
-
-set laststatus=2
 
 colorscheme onedark
