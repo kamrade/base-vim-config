@@ -3,6 +3,8 @@ set number
 set ruler
 syntax on
 
+set path=.,,**
+
 " Default Whitespace
 set tabstop=2
 set shiftwidth=2
@@ -53,6 +55,8 @@ set hidden
 
 set history=1000
 
+set switchbuf=usetab
+
 " ===================================================================
 "                            MAPPING
 " ===================================================================
@@ -60,6 +64,8 @@ set history=1000
 
 inoremap <C-F> <ESC>
 inoremap <C-c> <ESC>
+nnoremap <F8> :tabnext<CR>
+nnoremap <S-F8> :tabprevious<CR>
 
 " ====================================================================
 "                          Vim Terminal
